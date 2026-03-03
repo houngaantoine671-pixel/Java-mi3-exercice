@@ -1,0 +1,179 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cahier des Charges - BudgetManager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #1a237e;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body><h1 align="center">CAHIER DES CHARGES</h1>
+<h2 align="center">Application de Gestion de Budget Personnel - BudgetManager</h2><div class="section">
+    <h2>1. Présentation Générale du Projet</h2>
+    <p><strong>Nom du projet :</strong> BudgetManager</p>
+    <p><strong>Type d'application :</strong> Application console développée en Java</p>
+    <p><strong>Paradigme :</strong> Programmation Orientée Objet (POO)</p>
+    <p>
+        BudgetManager est une application permettant à un utilisateur de gérer efficacement ses revenus et ses dépenses.
+        Elle vise à offrir un outil simple, structuré et automatisé pour assurer un meilleur contrôle financier personnel.
+    </p>
+</div><div class="section">
+    <h2>2. Contexte et Justification</h2>
+    <p>
+        La gestion financière personnelle constitue un enjeu majeur pour les étudiants et les jeunes professionnels.
+        L'absence de suivi des dépenses entraîne souvent des déséquilibres budgétaires.
+    </p>
+    <p>
+        Le projet BudgetManager répond à ce problème en proposant un système permettant :
+    </p>
+    <ul>
+        <li>L'enregistrement structuré des revenus</li>
+        <li>L'enregistrement catégorisé des dépenses</li>
+        <li>Le calcul automatique du solde</li>
+        <li>L'affichage synthétique de la situation financière</li>
+    </ul>
+</div><div class="section">
+    <h2>3. Objectifs du Projet</h2>
+    <h3>3.1 Objectif Général</h3>
+    <p>
+        Concevoir une application orientée objet permettant la gestion complète d'un budget personnel.
+    </p><h3>3.2 Objectifs Spécifiques</h3>
+<ul>
+    <li>Mettre en œuvre les principes fondamentaux de la POO</li>
+    <li>Implémenter l'héritage et le polymorphisme</li>
+    <li>Structurer les données à l'aide de collections (ArrayList)</li>
+    <li>Automatiser les calculs financiers</li>
+</ul>
+
+</div><div class="section">
+    <h2>4. Périmètre du Projet</h2>
+    <h3>Inclus dans le projet :</h3>
+    <ul>
+        <li>Ajout de revenus</li>
+        <li>Ajout de dépenses</li>
+        <li>Catégorisation des dépenses</li>
+        <li>Calcul du solde</li>
+        <li>Affichage des transactions</li>
+    </ul><h3>Non inclus :</h3>
+<ul>
+    <li>Connexion à une base de données externe</li>
+    <li>Interface graphique avancée</li>
+    <li>Système de sécurité avancé</li>
+</ul>
+
+</div><div class="section">
+    <h2>5. Exigences Fonctionnelles</h2>
+    <table>
+        <tr>
+            <th>Code</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>EF1</td>
+            <td>Permettre l'ajout d'un revenu</td>
+        </tr>
+        <tr>
+            <td>EF2</td>
+            <td>Permettre l'ajout d'une dépense</td>
+        </tr>
+        <tr>
+            <td>EF3</td>
+            <td>Afficher la liste des transactions</td>
+        </tr>
+        <tr>
+            <td>EF4</td>
+            <td>Calculer automatiquement le solde</td>
+        </tr>
+        <tr>
+            <td>EF5</td>
+            <td>Afficher un résumé financier</td>
+        </tr>
+    </table>
+</div><div class="section">
+    <h2>6. Exigences Non Fonctionnelles</h2>
+    <ul>
+        <li>Performance : exécution rapide sans latence perceptible</li>
+        <li>Maintenabilité : code structuré et modulaire</li>
+        <li>Lisibilité : respect des conventions Java</li>
+        <li>Extensibilité : possibilité d'ajouter une base de données ultérieurement</li>
+    </ul>
+</div><div class="section">
+    <h2>7. Architecture et Modélisation Objet</h2>
+    <h3>Classes principales :</h3>
+    <ul>
+        <li><strong>Utilisateur</strong></li>
+        <li><strong>Transaction (classe abstraite)</strong></li>
+        <li><strong>Revenu (hérite de Transaction)</strong></li>
+        <li><strong>Depense (hérite de Transaction)</strong></li>
+        <li><strong>BudgetManager</strong></li>
+    </ul><h3>Principes POO utilisés :</h3>
+<ul>
+    <li>Encapsulation</li>
+    <li>Héritage</li>
+    <li>Abstraction</li>
+    <li>Polymorphisme</li>
+</ul>
+
+</div><div class="section">
+    <h2>8. Contraintes Techniques</h2>
+    <ul>
+        <li>Langage : Java</li>
+        <li>IDE recommandé :  Eclipse </li>
+        <li>Stockage : Mémoire vive (ArrayList)</li>
+        <li>Version Java : 17 +</li>
+    </ul>
+</div><div class="section">
+    <h2>9. Planification Prévisionnelle</h2>
+    <table>
+        <tr>
+            <th>Phase</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Analyse</td>
+            <td>Étude du problème et définition des besoins</td>
+        </tr>
+        <tr>
+            <td>Conception</td>
+            <td>Modélisation UML et définition des classes</td>
+        </tr>
+        <tr>
+            <td>Développement</td>
+            <td>Implémentation en Java</td>
+        </tr>
+        <tr>
+            <td>Tests</td>
+            <td>Vérification du bon fonctionnement</td>
+        </tr>
+    </table>
+</div><div class="section">
+    <h2>10. Conclusion</h2>
+    <p>
+        Le projet BudgetManager constitue une application pédagogique complète permettant de mettre en pratique
+        les concepts fondamentaux de la Programmation Orientée Objet en Java.
+        Il répond à un besoin réel de gestion financière tout en respectant une architecture logicielle claire,
+        modulaire et évolutive.
+    </p>
+</div></body>
+</html>
